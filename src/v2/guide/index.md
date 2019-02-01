@@ -283,6 +283,8 @@ var app6 = new Vue({
 Vue.component('todo-item', {
   template: '<li>这是个待办项</li>'
 })
+//注册完组件相当于声明但少了实例化的过程
+new Vue({el:"todo-item"});  //创建多个实例和<todo-item>标签以显示多个列表
 ```
 
 现在你可以用它构建另一个组件模板：
